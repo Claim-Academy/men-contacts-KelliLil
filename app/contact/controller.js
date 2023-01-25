@@ -14,7 +14,7 @@ mongoose
     console.log("Error connecting to DB", err.message);
   });
 
-export default {
+const contactController = {
   // Get all contacts
   index() {
     return Contact.find();
@@ -49,3 +49,6 @@ update(id2Update, updatedContact) {
 delete(id2Delete) {
   return Contact.findByIdAndDelete(id2Delete);
 },\
+
+
+export default contactController;
