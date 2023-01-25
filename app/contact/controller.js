@@ -20,7 +20,8 @@ export default {
     return Contact.find();
   },
 
-  show(id) {
+  // get single contact
+  showById(id) {
     if (mongoose.Types.ObjectId.isValid(id)) {
       return Contact.findById(id);
     }
