@@ -8,5 +8,12 @@ mongoose
     console.log("Connected to the DB");
   })
   .catch((err) => {
-    console.log("Error connecting to DB", err);
+    console.log("Error connecting to DB", err.message);
   });
+
+export default {
+  // Get all contacts
+  index() {
+    return Contact.find();
+  },
+};
