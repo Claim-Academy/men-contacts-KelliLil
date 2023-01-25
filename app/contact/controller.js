@@ -48,4 +48,4 @@ update(id2Update, updatedContact) {
 
 delete(id2Delete) {
   return Contact.findByIdAndDelete(id2Delete);
-},
+},\
