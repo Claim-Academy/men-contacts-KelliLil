@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
 import config from "../config.js";
+import Contact from "./Contacts.js";
 
 mongoose
   .connect(config.getDbConnectionString("contacts"))
