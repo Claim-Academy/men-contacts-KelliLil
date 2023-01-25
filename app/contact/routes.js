@@ -2,7 +2,7 @@ import { Router } from "express";
 import controller from "./controller.js";
 
 const router = new Router();
-// Use controller to get all of the contacts
+// THIS will handle HTTP GET requests to /api/contacts
 router.get("/", (_, response) => {
   controller
     .index()
