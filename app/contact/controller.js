@@ -55,6 +55,7 @@ updateById(id2Update, updatedContact) {
   }
 
   // Wrap the error in a rejected promise so that it can be CAUGHT.
+  // This is being AWAITed in the router (it expects a promise).
   return Promise.reject(new Error("Invalid ID"));
 };
 
