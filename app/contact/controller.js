@@ -3,7 +3,7 @@ import config from "../config.js";
 import Contact from "./Contacts.js";
 
 mongoose
-  .connect(config.getDbConnectionString("contacts"))
+  .connect(config.dbConn)
   .then(() => {
     console.log("Connected to the DB");
   })
