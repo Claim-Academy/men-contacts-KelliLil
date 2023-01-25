@@ -30,6 +30,10 @@ export default {
   },
 };
 
+showByUsername(username) {
+  return Contact.findOne({ username });
+},
+
 create(contact) {
   return Contact.create(contact);
 },
