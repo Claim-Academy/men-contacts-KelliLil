@@ -44,3 +44,8 @@ update(id2Update, updatedContact) {
     runValidators: true,
   });
 },
+
+
+delete(id2Delete) {
+  return Contact.findByIdAndDelete(id2Delete);
+},
