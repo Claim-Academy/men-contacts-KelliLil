@@ -25,3 +25,7 @@ export default {
     return Promise.reject(new Error("Invalid ID"));
   },
 };
+
+create(contact) {
+  return Contact.create(contact);
+},
